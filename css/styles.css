@@ -71,3 +71,14 @@ a {
 footer {
     background-color: #FFC0CB;
 }
+
+
+.img-fluid{
+border-radius: 20%;
+border :solid 1px white;
+}
+
+.img-fluid:hover{
+border-radius: 45%;
+transition: 1.5s;
+   }
