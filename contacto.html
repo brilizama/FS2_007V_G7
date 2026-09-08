@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Pastelería Mil Sabores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <p class="aniversario text-center py-2 mb-0">Celebramos 50 años compartiendo dulces momentos</p>
+        <!-- Barra de navegación principal -->
+        <nav class="navbar navbar-expand-lg" aria-label="Menú principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mil Sabores</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+
+        <section>
+            <p class="etiqueta">Estamos para escucharte</p>
+            <h1 class="titulo-principal">Contacto</h1>
+            <div class="row">
+                <article class="col-12 col-md-6 mb-3">
+                    <h2>Visítanos</h2>
+                    <p>Dirección: Calle Dulce 123, Santiago, Chile.</p>
+                    <p>Correo: contacto@milsabores.example</p>
+                    <p>Horario: lunes a sábado, de 09:00 a 19:00.</p>
+                    <p class="nota">Datos ficticios para este proyecto académico.</p>
+                </article>
+                <section class="col-12 col-md-6 mt-0">
+                    <h2>Escríbenos</h2>
+                    <p>Demostración: no se envían mensajes ni se guardan datos. Todos los campos son obligatorios.</p>
+                    <form onsubmit="return validarContacto()">
+                        <label class="form-label" for="nombre-contacto">Nombre</label>
+                        <input class="form-control mb-3" id="nombre-contacto" name="nombre" type="text" autocomplete="name" required>
+                        <label class="form-label" for="correo-contacto">Correo electrónico</label>
+                        <input class="form-control mb-3" id="correo-contacto" name="correo" type="email" autocomplete="email" required>
+                        <label class="form-label" for="asunto">Asunto</label>
+                        <input class="form-control mb-3" id="asunto" name="asunto" type="text" required>
+                        <label class="form-label" for="mensaje">Mensaje</label>
+                        <textarea class="form-control mb-3" id="mensaje" name="mensaje" rows="6" required></textarea>
+                        <button class="btn boton mt-3" type="submit">Enviar mensaje</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-3">
+        <p>Pastelería Mil Sabores</p>
+        <p><a href="nosotros.html">Nuestra historia</a> · <a href="contacto.html">Contacto</a></p>
+        <p>© 2026 Pastelería Mil Sabores · Duoc UC</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

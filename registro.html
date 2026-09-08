@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Pastelería Mil Sabores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <p class="aniversario text-center py-2 mb-0">Celebramos 50 años compartiendo dulces momentos</p>
+        <!-- Barra de navegación principal -->
+        <nav class="navbar navbar-expand-lg" aria-label="Menú principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mil Sabores</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="registro.html" aria-current="page">Registro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+
+        <section class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+            <p class="etiqueta">Sé parte de nuestra historia</p>
+            <h1 class="titulo-principal">Registro</h1>
+            <p>Formulario de demostración: no crea una cuenta ni guarda tus datos. Utiliza datos de prueba.</p>
+            <p>Los campos marcados con * son obligatorios.</p>
+<form onsubmit="return validarRegistro()">
+                <label class="form-label" for="nombre">Nombre *</label>
+                <input class="form-control mb-3" id="nombre" name="nombre" type="text" autocomplete="given-name" required>
+                <label class="form-label" for="apellido">Apellido *</label>
+                <input class="form-control mb-3" id="apellido" name="apellido" type="text" autocomplete="family-name" required>
+                <label class="form-label" for="correo">Correo electrónico *</label>
+                <input class="form-control mb-3" id="correo" name="correo" type="email" autocomplete="email" required>
+                <label class="form-label" for="fecha">Fecha de nacimiento *</label>
+                <input class="form-control mb-3" id="fecha" name="fecha" type="date" autocomplete="bday" required>
+                <label class="form-label" for="contrasena">Contraseña *</label>
+                <input class="form-control mb-3" id="contrasena" name="contrasena" type="password" minlength="6" autocomplete="new-password" aria-describedby="ayuda-clave" required>
+                <small class="d-block mb-3" id="ayuda-clave">Usa al menos 6 caracteres y una contraseña de prueba.</small>
+                <label class="form-label" for="confirmar">Confirmar contraseña *</label>
+                <input class="form-control mb-3" id="confirmar" name="confirmar" type="password" minlength="6" autocomplete="new-password" required>
+                <label class="form-label" for="codigo">Código promocional (opcional)</label>
+                <input class="form-control mb-3" id="codigo" name="codigo" type="text" aria-describedby="ayuda-codigo">
+                <small class="d-block mb-3" id="ayuda-codigo">Campo preparado para una próxima etapa. Todavía no aplica descuentos.</small>
+                <button class="btn boton mt-3" type="submit">Validar registro</button>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-3">
+        <p>Pastelería Mil Sabores</p>
+        <p><a href="nosotros.html">Nuestra historia</a> · <a href="contacto.html">Contacto</a></p>
+        <p>© 2026 Pastelería Mil Sabores · Duoc UC</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/validaciones.js"></script>
+</body>
+</html>
